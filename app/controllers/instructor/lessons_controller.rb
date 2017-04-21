@@ -18,6 +18,10 @@ class Instructor::LessonsController < ApplicationController
       return render plain: 'Unauthorized', status: :unauthorized
     end
   end
+  
+  def current_lesson
+    @current_lesson ||= Lesson.find(params[:id])
+  end
 
   helper_method :current_section
 
@@ -26,6 +30,6 @@ class Instructor::LessonsController < ApplicationController
   end
 
   def lesson_params
-    params.require(:lesson).permit(:title, :subtitle)
+    params.require(:lesson).permit(:title, :subtitle, :video)
   end
 end

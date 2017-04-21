@@ -1,0 +1,6 @@
+# config/application.yml
+
+AWS_ACCESS_KEY: "AKIAJ4RMSLKEIUBKORGQ"
+AWS_SECRET_KEY: "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"
+AWS_BUCKET:     "flixsta"
+AWS_REGION:     "us-east-1"
