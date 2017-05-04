@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
@@ -106,4 +107,8 @@ body {
 .lesson a b {
   font-weight: 100;
   font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
 }
